@@ -1,2 +1,3 @@
-console.log("Hello World!\n");
-
+pp.get('/mars', function(req, res) {
+ res.send('Hello Mars!\n');
+});
