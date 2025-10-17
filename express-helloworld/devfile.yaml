@@ -1,0 +1,12 @@
+schemaVersion: 2.2.0
+metadata:
+  name: express-helloworld
+  version: 1.0.0
+  description: Node.js Express Hello World
+components:
+  - name: runtime
+    container:
+      image: registry.access.redhat.com/ubi8/nodejs-16
+      command: ["npm", "start"]
+      mountSources: true
+      sourceMapping: /project
